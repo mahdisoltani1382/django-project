@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGuTboKmMCqLY3hlNJYtQzLUckTosF9xzcA&usqp=CAU");
+      background-repeat: no-repeat;
+      background-size: 1600px 10000px;
+    }
+    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {% for teams in team  %}
+        <h1>{{ teams.team}}</h1>
+        <p>{{ teams.post }}</p>
+        <p>{{ teams.name }}</p>
+        <p>********************************</p>
+    {% endfor %}
+</body>
+</html>
